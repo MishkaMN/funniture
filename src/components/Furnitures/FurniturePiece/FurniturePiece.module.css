@@ -1,0 +1,72 @@
+.Wall {
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    background-color: rgb(231, 231, 231);
+    left: 25%;
+    top: 20%;
+    z-index: 40;
+}
+.Wall:before {
+    content: "";
+    left: 25%;
+    top: 30%;
+    width: 10%;
+    height: 45%;
+    position: absolute;
+    background-color: rgb(0, 174, 255);
+    border-color: white;
+    z-index: 50;
+}
+
+.Wall:after {
+    content: "";
+    right: 25%;
+    top: 30%;
+    width: 10%;
+    height: 45%;
+    position: absolute;
+    background-color: rgb(0, 174, 255);
+    border-color: white;
+    z-index: 50;
+}
+
+.Floor {
+    left: 25%;
+    top: 35%;
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    background-color: rgb(153, 62, 2);
+    z-index: 50;
+}
+.Chair {
+    width: 80%;
+    height: 8%;
+    background: linear-gradient(#7f3608, #702e05);
+    margin: 2% auto;
+    border-radius: 15px;
+}
+
+.Ottoman {
+    width: 90%;
+    height: 4.5%;
+    margin: 2% auto;
+    background: linear-gradient(#f4d004, #d6bb22);
+    border-radius: 20px;
+}
+
+.Table {
+    width: 85%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#228c1d, #91ce50);
+    border-radius: 20px;
+}
+
+.Couch {
+    width: 80%;
+    height: 3%;
+    background: linear-gradient(#bf3813, #c45e38);
+    margin: 2% auto;
+}

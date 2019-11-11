@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Aux from "../Auxiliary/Auxiliary";
+
 class Layout extends Component {
     /*
     state = {
@@ -17,7 +19,12 @@ class Layout extends Component {
     };
     */
     render() {
-        return <p>This is Layout</p>;
+        return (
+            <Aux>
+                <div>Toolbar, Sidebar, Backdrop</div>
+                <main>{this.props.children}</main>
+            </Aux>
+        );
     }
 }
 

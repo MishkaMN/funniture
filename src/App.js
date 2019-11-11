@@ -6,11 +6,9 @@ import FurniturePlacer from "./containers/FurniturePlacer/FurniturePlacer";
 class App extends Component {
     render() {
         return (
-            <div>
-                <Layout>
-                    <FurniturePlacer />
-                </Layout>
-            </div>
+            <Layout>
+                <FurniturePlacer />
+            </Layout>
         );
     }
 }

@@ -6,12 +6,12 @@ const FURNITURE_PRICES = {
     chair: 0.5,
     ottoman: 0.4,
     table: 1.3,
-    couch: 0.7
+    couch: 1.0
 };
 const FURNITURE_MOVING_PRICES = {
-    chair: 0.5,
-    ottoman: 0.4,
-    table: 1.3,
+    chair: 0.1,
+    ottoman: 0.2,
+    table: 0.5,
     couch: 0.7
 };
 
@@ -39,7 +39,7 @@ class FurniturePlacer extends Component {
         for (let key in disabledInfo) {
             disabledInfo[key] = disabledInfo[key] <= 0;
         }
-        // {salad: true, meat: false, ...}
+        // {chair: true, table: false, ...}
         return (
             <div>
                 <p>Modal</p>

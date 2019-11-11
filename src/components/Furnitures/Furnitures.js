@@ -1,9 +1,14 @@
 import React from "react";
-import Furniture from "./Furniture/Furniture";
+import FurniturePiece from "./FurniturePiece/FurniturePiece";
 
-const furnitures = () => (
+const furnitures = props => (
     <div>
-        <Furniture />
+        <center>
+            <p>Pleace the furnitures in the room!</p>
+        </center>
+        <FurniturePiece type="floor" />
+        <FurniturePiece type="wall" />
+        <FurniturePiece />
     </div>
 );
 
