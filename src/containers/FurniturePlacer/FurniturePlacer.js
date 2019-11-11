@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-import Aux from "../../hoc/Aux/Aux";
-import Furniture from "../../components/Furniture/Furniture";
+import Furnitures from "../../components/Furnitures/Furnitures";
 
 const FURNITURE_PRICES = {
     chair: 0.5,
@@ -42,11 +41,11 @@ class FurniturePlacer extends Component {
         }
         // {salad: true, meat: false, ...}
         return (
-            <Aux>
+            <div>
                 <p>Modal</p>
                 <Furnitures furnitures={this.state.furnitures} />
                 <p>Build Control</p>
-            </Aux>
+            </div>
         );
     }
 }
